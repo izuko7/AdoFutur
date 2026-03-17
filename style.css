@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f0ede6;
   min-height: 100vh;
   padding: 24px 32px;
@@ -51,7 +51,9 @@ nav {
   padding: 8px 22px;
   color: #1a1a1a !important;
   font-weight: 500;
-  transition: border-color 0.2s, color 0.2s !important;
+  transition:
+    border-color 0.2s,
+    color 0.2s !important;
 }
 
 .btn-contact a:hover {
@@ -101,7 +103,9 @@ nav {
   text-decoration: none;
   background: transparent;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
 
 .btn-debut:hover {
@@ -115,7 +119,6 @@ nav {
   color: #bbb;
 }
 
-
 .info-section {
   display: flex;
   justify-content: center;
@@ -124,7 +127,7 @@ nav {
   max-width: 1200px;
   margin: 40px auto;
 }
- 
+
 .info-card {
   display: flex;
   flex-direction: column;
@@ -132,7 +135,7 @@ nav {
   text-align: center;
   max-width: 420px;
 }
- 
+
 .info-img {
   width: 100%;
   max-width: 320px;
@@ -140,7 +143,7 @@ nav {
   margin-bottom: 32px;
   padding-bottom: 20px;
 }
- 
+
 .info-title {
   font-size: 1.35rem;
   font-weight: 500;
@@ -148,14 +151,13 @@ nav {
   line-height: 1.5;
   margin-bottom: 24px;
 }
- 
+
 .info-text {
   font-size: 0.9rem;
   color: #999;
   line-height: 1.7;
   max-width: 340px;
 }
-
 
 .sectionStat {
   max-width: 1100px;
@@ -165,7 +167,7 @@ nav {
   flex-direction: column;
   gap: 24px;
 }
- 
+
 /* Ligne du haut */
 .stats-top {
   display: flex;
@@ -173,7 +175,7 @@ nav {
   justify-content: space-between;
   gap: 24px;
 }
- 
+
 .descriptStat {
   background-color: #f0f0f0;
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
@@ -185,12 +187,12 @@ nav {
   line-height: 1.5;
   font-weight: 400;
 }
- 
+
 .stats-badges {
   display: flex;
   gap: 20px;
 }
- 
+
 .badge {
   background-color: #2e6e4f;
   border-radius: 16px;
@@ -199,7 +201,7 @@ nav {
   color: #ffffff;
   min-width: 160px;
 }
- 
+
 .badge-number {
   display: block;
   font-size: 2.8rem;
@@ -207,13 +209,13 @@ nav {
   line-height: 1;
   margin-bottom: 8px;
 }
- 
+
 .badge-label {
   font-size: 0.95rem;
   font-weight: 400;
   opacity: 0.9;
 }
- 
+
 /* Carte "Comment ça marche" */
 .Comment-card {
   background-color: #f5f5f5;
@@ -221,27 +223,27 @@ nav {
   border-radius: 24px;
   padding: 48px 48px 40px;
 }
- 
+
 .how-title {
   font-size: 2rem;
   font-weight: 500;
   color: #1a1a1a;
   margin-bottom: 48px;
 }
- 
+
 .steps {
   display: flex;
   gap: 60px;
   margin-bottom: 48px;
 }
- 
+
 .step {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
- 
+
 .step-number {
   width: 64px;
   height: 64px;
@@ -255,19 +257,19 @@ nav {
   color: #1a1a1a;
   background: transparent;
 }
- 
+
 .step-name {
   font-size: 1.2rem;
   font-weight: 500;
   color: #1a1a1a;
 }
- 
+
 .step-text {
   font-size: 0.9rem;
   color: #888;
   line-height: 1.7;
 }
- 
+
 .btn-test {
   display: inline-block;
   border: 1.5px solid #1a1a1a;
@@ -278,14 +280,73 @@ nav {
   color: #1a1a1a;
   text-decoration: none;
   background: transparent;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s;
+  transition:
+    background 0.2s,
+    color 0.2s;
 }
- 
+
 .btn-test:hover {
   background: #2e6e4f;
   color: #ffffff;
   border-color: #2e6e4f;
 }
- 
+
+/* ── Section "Ce que vous recevrez" ── */
+.features-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  text-align: center;
+}
+
+.features-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  margin-bottom: 64px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 260px;
+  gap: 16px;
+}
+
+.feature-icon {
+  width: 72px;
+  height: 72px;
+  background-color: #2e6e4f;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.feature-icon i {
+  font-size: 1.6rem;
+  color: white;
+}
+
+.feature-name {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2a2a2a;
+}
+
+.feature-text {
+  font-size: 0.9rem;
+  color: #999;
+  line-height: 1.7;
+  text-align: center;
+}
