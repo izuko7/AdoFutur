@@ -72,7 +72,7 @@ nav {
 }
 
 .title {
-  font-size: clamp(5.8rem, 6vw, 4.5rem);
+  font-size: clamp(4.8rem, 6vw, 4.5rem);
   font-weight: 500;
   color: #5a5a5a;
   line-height: 1.15;
@@ -111,4 +111,54 @@ nav {
 .btn-debut:hover {
   background: #2e6e4f;
   color: #f5f0e8;
+}
+
+/* choix du genre  */
+
+.genre-group{
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-genre{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: .80rem 24px;
+  border-radius: 99px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: .01em;
+  transition: transform .18s, box-shadow .18s, filter .18s;
+}
+
+.btn-homme{
+  background: #1e6b4a;
+  color: #fff;
+}
+
+.btn-homme:hover{
+  background: #2fc182;
+}
+
+.btn-femme{
+  background: #6b35c8;
+  color: #fff;
+}
+
+.btn-femme:hover{
+  background: #8561c2;
+}
+
+.btn-genre:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+ 
+.btn-genre:active {
+  transform: translateY(0);
 }
