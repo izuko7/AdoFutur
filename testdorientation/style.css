@@ -1,0 +1,388 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0ede6;
+  min-height: 100vh;
+  padding: 24px 32px;
+}
+
+/*Barre de navigation*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 24px;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.97rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #2e6e4f;
+}
+
+.btn-contact a {
+  border: 1.5px solid #8a8989;
+  border-radius: 999px;
+  padding: 8px 22px;
+  color: #1a1a1a !important;
+  font-weight: 500;
+  transition:
+    border-color 0.2s,
+    color 0.2s !important;
+}
+
+.btn-contact a:hover {
+  border-color: #2e6e4f !important;
+  color: #2e6e4f !important;
+}
+
+/*Carte au niveau du header*/
+.card {
+  background-color: #f5f0e8;
+  border-radius: 28px;
+  padding: 80px 72px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+}
+
+.title {
+  font-size: clamp(4.8rem, 6vw, 4.5rem);
+  font-weight: 500;
+  color: #5a5a5a;
+  line-height: 1.15;
+  margin-bottom: 28px;
+}
+
+.coleur {
+  color: #2e6e4f;
+  font-weight: 700;
+}
+
+.sous-titre {
+  font-size: 1.5rem;
+  color: #222;
+  max-width: 480px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.btn-debut {
+  display: inline-block;
+  border: 1px solid #1a1a1a;
+  border-radius: 999px;
+  padding: 14px 40px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.btn-debut:hover {
+  background: #2e6e4f;
+  color: #f5f0e8;
+}
+
+/* choix du genre  */
+
+.genre-group{
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.btn-genre{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: .80rem 24px;
+  border-radius: 99px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: .01em;
+  transition: transform .18s, box-shadow .18s, filter .18s;
+}
+
+.btn-homme{
+  background: #1e6b4a;
+  color: #fff;
+}
+
+.btn-homme:hover{
+  background: #2fc182;
+}
+
+.btn-femme{
+  background: #6b35c8;
+  color: #fff;
+}
+
+.btn-femme:hover{
+  background: #8561c2;
+}
+
+.btn-genre:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 8px 24px rgba(0,0,0,.15);
+}
+ 
+.btn-genre:active {
+  transform: translateY(0);
+}
+
+/*Section Découvrir mon profil*/
+.profil-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  text-align: center;
+}
+ 
+.profil-titre {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #4a4a4a;
+  margin-bottom: 56px;
+}
+ 
+.profil-grille {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+ 
+.profil-card {
+  background-color: #fff8f8;
+  border-radius: 20px;
+  padding: 36px 28px;
+  flex: 1;
+  max-width: 320px;
+  text-align: center;
+  font-size: 1rem;
+  color: #2a2a2a;
+  line-height: 1.7;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/*Section "Apprendre à faire les bons choix"*/
+.choix-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  gap: 60px;
+}
+ 
+.choix-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+ 
+.choix-titre {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.3;
+}
+ 
+.choixdesc {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.8;
+  max-width: 380px;
+}
+ 
+.choix-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+ 
+.choix-img img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+/* Section filière */
+
+
+.filiere{
+  padding: 5rem 6rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.filiere-contenu{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.filiere-titre{
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.filieredesc{
+  font-size: 1.2rem;
+  color: #444;
+  line-height: 1.65;
+}
+
+.filiere-btn{
+  margin-top: 0.6rem;
+  padding: 0.75rem 1.8rem;
+  background: #f0ede6;
+  border: 1px solid #1a1a1a;
+  border-radius: 99px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  transition: 0.2s, color 0.2s;
+}
+
+.filiere-btn:hover{
+  background: #1e6b4a;
+  color: #fff;
+}
+
+/*Footer*/
+.footer {
+  background-color: #2d2d2d;
+  color: #ccc;
+  padding: 60px 80px 0;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #444;
+}
+ 
+.footer-logo-img {
+ height: 120px;
+  width: auto;
+}
+ 
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+ 
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 180px;
+}
+ 
+.footer-col-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+ 
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+.footer-col ul li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.92rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+ 
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+ 
+/* Icônes sociales */
+.social-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+ 
+.social-btn {
+  width: 52px;
+  height: 52px;
+  background-color: #3e3e3e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+ 
+.social-btn:hover {
+  background-color: #2e6e4f;
+}
+ 
+/* Bas du footer */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.85rem;
+  color: #777;
+  border-top: 1px solid #444;
+  margin-top: 0;
+}
