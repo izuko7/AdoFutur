@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0ede6;
+  min-height: 100vh;
+  padding: 24px 32px;
+}
+
+/*Barre de navigation*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 24px;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.97rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #2e6e4f;
+}
+
+.btn-contact a {
+  border: 1.5px solid #8a8989;
+  border-radius: 999px;
+  padding: 8px 22px;
+  color: #1a1a1a !important;
+  font-weight: 500;
+  transition:
+    border-color 0.2s,
+    color 0.2s !important;
+}
+
+.btn-contact a:hover {
+  border-color: #2e6e4f !important;
+  color: #2e6e4f !important;
+}
+
+/*Section "Explore les métiers de demain"*/
+.metiers-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  gap: 60px;
+}
+
+.metiers-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.metiers-titre {
+  font-size: 2.9rem;
+  font-weight: 700;
+  color: #3a3a3a;
+  line-height: 1.2;
+}
+
+.metiers-desc {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+  max-width: 420px;
+}
+
+/* Barre de recherche */
+.metiers-search {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 999px;
+  padding: 14px 24px;
+  background: #fff;
+  max-width: 480px;
+}
+
+.search-icon {
+  color: #999;
+  font-size: 1rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  color: #444;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background: transparent;
+}
+
+.search-input::placeholder {
+  color: #bbb;
+}
+
+/* Tags */
+.metiers-tags {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #e0e0e0;
+  border-radius: 999px;
+  padding: 8px 20px;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 400;
+  cursor: pointer;
+  transition:
+    0.2s,
+    color 0.2s;
+}
+
+.tag:hover {
+  background-color: #2e6e4f;
+  color: #fff;
+}
+
+/* Image */
+.metiers-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.metiers-img img {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+}
+
+/* ── Barre de filtres ── */
+.filter-barre {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+  padding: 20px 28px;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filtre-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #333;
+  white-space: nowrap;
+}
+
+.filter-tags {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.filter-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid #ddd;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #333;
+  background: #fff;
+  cursor: pointer;
+  transition:
+    0.2s,
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.filter-tag:hover {
+  border-color: #2e6e4f;
+  color: #2e6e4f;
+}
+
+.filter-tag.active {
+  background-color: #2e6e4f;
+  border-color: #2e6e4f;
+  color: #fff;
+}
+
+.filter-right {
+  margin-left: auto;
+}
+
+.filter-niveau {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  font-size: 0.92rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.filter-niveau:hover {
+  color: #2e6e4f;
+}
+
+/* ── Section cartes métiers ── */
+.metiers-cards-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+
+.metiers-count {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  max-width: 1100px;
+  margin: 0 auto 20px;
+  padding: 0 32px;
+}
+
+.metiers-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.metier-card {
+  background-color: #e8e8e8;
+  border-radius: 20px;
+  padding: 28px;
+  flex: 1;
+  min-width: 280px;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.metier-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.metier-icon {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.metier-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.metier-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  letter-spacing: 0.03em;
+}
+
+.metier-desc {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.metier-card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.metier-etude {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #d6d6d6;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.88rem;
+  color: #444;
+  width: fit-content;
+}
+
+.metier-etude i {
+  color: #2e6e4f;
+}
+
+.btn-voir {
+  display: inline-block;
+  background-color: #2e6e4f;
+  color: #fff;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  width: fit-content;
+  transition: 0.2s;
+}
+
+.btn-voir:hover {
+  background-color: #235a40;
+}
+
+/* Footer */
+.footer {
+  background-color: #2d2d2d;
+  color: #ccc;
+  padding: 60px 80px 0;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #444;
+}
+ 
+.footer-logo-img {
+ height: 120px;
+  width: auto;
+}
+ 
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+ 
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 180px;
+}
+ 
+.footer-col-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+ 
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+.footer-col ul li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.92rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+ 
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+ 
+/* Icônes sociales */
+.social-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+ 
+.social-btn {
+  width: 52px;
+  height: 52px;
+  background-color: #3e3e3e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition:  0.2s;
+}
+ 
+.social-btn:hover {
+  background-color: #2e6e4f;
+}
+ 
+/* Bas du footer */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.85rem;
+  color: #777;
+  border-top: 1px solid #444;
+  margin-top: 0;
+}

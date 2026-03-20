@@ -1,35 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AdoFutur | Métiers</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <!--favicon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="ressourrces/favicon/android-chrome-192x192.png"
-    />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdoFutur | Métiers</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!--favicon -->
+  <link rel="icon" type="image/x-icon" href="../ressourrces/favicon/android-chrome-192x192.png" />
+  <link rel="stylesheet" href="stylemetiers.css" />
 </head>
+
 <body>
-    <!-- Barre de navigation -->
-    <nav>
-      <img
-        src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
-        alt="Logo de AdoFutur"
-        class="logo"
-      />
-      <ul class="nav-links">
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Test d'orientation</a></li>
-        <li><a href="#">Métiers</a></li>
-        <li><a href="#">Moyennes</a></li>
-        <li class="btn-contact"><a href="#">Contacts</a></li>
-      </ul>
-    </nav>
+  <!-- Barre de navigation -->
+  <nav>
+    <img src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
+      alt="Logo de AdoFutur" class="logo" />
+    <ul class="nav-links">
+      <li><a href="../index.html">Accueil</a></li>
+      <li>
+        <a href="../testdorientation/testdorientation.html">Test d'orientation</a>
+      </li>
+      <li><a href="metiers.html">Métiers</a></li>
+      <li><a href="#">Moyennes</a></li>
+      <li class="btn-contact"><a href="#">Contacts</a></li>
+    </ul>
+  </nav>
+  <!-- Section "Explore les métiers de demain" -->
+  <div class="metiers-section">
+    <div class="metiers-text">
+      <h2 class="metiers-titre">Explore les métiers de demain</h2>
+      <p class="metiers-desc">
+        Découvre les différents métiers, les compétences nécessaires et les
+        parcours d'études pour réussir dans chaque domaine.
+      </p>
+
+      <div class="metiers-search">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" placeholder="Rechercher un métier" class="search-input" />
+      </div>
+
+      <div class="metiers-tags">
+        <span class="tag">Développeurs</span>
+        <span class="tag">Comptable</span>
+        <span class="tag">Médecin</span>
+      </div>
+    </div>
+
+    <div class="metiers-img">
+      <img src="../ressourrces/images/find_futur_job.png" alt="Image métiers" />
+    </div>
+  </div>
+
+  <!-- Barre de filtres -->
+  <div class="filter-barre">
+    <div class="filtre-left">
+      <span class="filter-label">Filtrer par domaine :</span>
+      <div class="filter-right">
+        <button class="filter-niveau">
+          Filtrer par niveau d'étude <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
+      <div class="filter-tags">
+        <button class="filter-tag active">Tous</button>
+        <button class="filter-tag">
+          <i class="fa-solid fa-desktop"></i> Informatique
+        </button>
+        <button class="filter-tag">
+          <i class="fa-solid fa-store"></i> Commerce
+        </button>
+        <button class="filter-tag">
+          <i class="fa-solid fa-briefcase-medical"></i> Santé
+        </button>
+        <button class="filter-tag">
+          <i class="fa-solid fa-bullhorn"></i> Communication
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <p class="metiers-count">+ de 50 métiers</p>
+
+  <div class="metiers-grid">
+
+    <div class="metier-card">
+      <div class="metier-card-top">
+        <img src="../ressourrces/images/metier1.png" alt="Informatique" class="metier-icon">
+        <div class="metier-card-info">
+          <h3 class="metier-name">INFORMATIQUE</h3>
+          <p class="metier-desc">Creér et maintenir des sites internets et des applications.</p>
+        </div>
+      </div>
+      <div class="metier-card-bottom">
+        <span class="metier-etude">
+          <i class="fa-solid fa-graduation-cap"></i> Etude : Informatique
+        </span>
+        <a href="#" class="btn-voir">Voir le métier</a>
+      </div>
+    </div>
+
+    <div class="metier-card">
+      <div class="metier-card-top">
+        <img src="../ressourrces/images/metier2.png" alt="Data Analyste" class="metier-icon">
+        <div class="metier-card-info">
+          <h3 class="metier-name">DATA ANALYSTE</h3>
+          <p class="metier-desc">Analyse les données pour aider les entreprises à prendre des décisions.</p>
+        </div>
+      </div>
+      <div class="metier-card-bottom">
+        <span class="metier-etude">
+          <i class="fa-solid fa-graduation-cap"></i> Etude : Data/Statistiques
+        </span>
+        <a href="#" class="btn-voir">Voir le métier</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="metiers-grid">
+
+    <div class="metier-card">
+      <div class="metier-card-top">
+        <img src="../ressourrces/images/metier3.png" alt="Informatique" class="metier-icon">
+        <div class="metier-card-info">
+          <h3 class="metier-name">COMMUNITY MANAGER</h3>
+          <p class="metier-desc">Gérer la communication et les réseux sociaux d'une entreprise.</p>
+        </div>
+      </div>
+      <div class="metier-card-bottom">
+        <span class="metier-etude">
+          <i class="fa-solid fa-graduation-cap"></i> Etude : Communnication / Marketing
+        </span>
+        <a href="#" class="btn-voir">Voir le métier</a>
+      </div>
+    </div>
+
+    <div class="metier-card">
+      <div class="metier-card-top">
+        <img src="../ressourrces/images/metier4.png" alt="Data Analyste" class="metier-icon">
+        <div class="metier-card-info">
+          <h3 class="metier-name">INFIMIER(ERE)</h3>
+          <p class="metier-desc">Soigenr et accompagner les patients dans un environement médical.</p>
+        </div>
+      </div>
+      <div class="metier-card-bottom">
+        <span class="metier-etude">
+          <i class="fa-solid fa-graduation-cap"></i> Etude : Santé
+        </span>
+        <a href="#" class="btn-voir">Voir le métier</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <img
+            src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
+            alt="Logo AdoFutur"
+            class="footer-logo-img"
+          />
+        </div>
+
+        <!-- Colonnes de liens -->
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Support</h4>
+            <ul>
+              <li><a href="#">Centre d'aide</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Conditions d'utilisation</a></li>
+              <li><a href="#">Test de personnalité</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Compagnie</h4>
+            <ul>
+              <li><a href="#">A propos de nous</a></li>
+              <li><a href="#">Termes et Services</a></li>
+              <li><a href="#">Blog de la communauté</a></li>
+              <li><a href="#">Termes & Services</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Contact</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Nous contacter</a></li>
+              <li><a href="#">Partenaires</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Socail</h4>
+            <div class="social-icons">
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-snapchat"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bas du footer -->
+      <div class="footer-bottom">
+        <p>© 2026 Bits Entreprise. Tous droits réservés.</p>
+      </div>
+    </footer>
 </body>
+
 </html>
