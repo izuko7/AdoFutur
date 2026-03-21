@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AdoFutur | Test d'orientation</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>AdoFutur | Contacts</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -15,6 +14,7 @@
       type="image/x-icon"
       href="../ressourrces/favicon/android-chrome-192x192.png"
     />
+    <link rel="stylesheet" href="contactstyle.css" />
   </head>
   <body>
     <!-- Barre de navigation -->
@@ -26,94 +26,90 @@
       />
       <ul class="nav-links">
         <li><a href="../index.html">Accueil</a></li>
-        <li><a href="testdorientation.html">Test d'orientation</a></li>
+        <li>
+          <a href="../testdorientation/testdorientation.html"
+            >Test d'orientation</a
+          >
+        </li>
         <li><a href="../metiers/metiers.html">Métiers</a></li>
         <li><a href="../moyenne/moyenne.html">Moyennes</a></li>
-        <li class="btn-contact"><a href="../Contacts/contacts.html">Contacts</a></li>
+        <li class="btn-contact"><a href="contacts.html">Contacts</a></li>
       </ul>
     </nav>
-    <!-- carte de la barre de navigation -->
-    <div>
-      <div class="card">
-        <h1 class="title">
-          Découvre la <span class="coleur">carrière</span>,<br />
-          qui te correspond.<br />
-        </h1>
-        <p class="sous-titre">Selectionnez votre genre</p>
-        <!-- choix du genre -->
 
-        <div class="genre-group">
-          <!-- Homme -->
-          <div class="btn-genre btn-homme">
-            <i class="fa-solid fa-mars"></i>
-            Homme
-          </div>
-          <!-- Femme -->
-          <div class="btn-genre btn-femme">
-            <i class="fa-solid fa-venus"></i>
-            Femme
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Section "Découvrir mon profil" -->
-    <div class="profil-section">
-      <h2 class="profil-titre">Découvrir mon profil</h2>
-
-      <div class="profil-grille">
-        <div class="profil-card">
-          <p>
-            AdoFutur t'aide à découvrir tes talents, tes centres d'intérêt et
-            les métiers qui peuvent t'aider à construire ton avenir.
-          </p>
-        </div>
-
-        <div class="profil-card">
-          <p>
-            Réponds a quelques questions simples et découvre les domaines
-            d'études et les carrières qui correspondent à ta personnalité.
-          </p>
-        </div>
-
-        <div class="profil-card">
-          <p>
-            Réponds a quelques questions simples et découvre les domaines
-            d'études et les carrières qui correspondent à ta personnalité.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Section "Apprendre à faire les bons choix" -->
-    <div class="choix-section">
-      <div class="choix-text">
-        <h2 class="choix-titre">Apprendre à faire les bons choix</h2>
-        <p class="choixdesc">
-          Grâce à AdoFutur, comprends mieux les différentes filières et découvre
-          celles qui correspondent à ton potentiel.
+    <!-- Section Contact -->
+    <section class="contact-section">
+      <!-- Colonne gauche -->
+      <div class="contact-left">
+        <h2 class="contact-title">Nous sommes là pour vous aider !</h2>
+        <p class="contact-intro">
+          Vous avez une question, vous voulez nous faire part de vos
+          commentaires ou vous souhaitez obtenir de l'aide ? N'hésitez pas à
+          nous contacter !
         </p>
-      </div>
 
-      <div class="choix-img">
-        <img
-          src="../ressourrces/images/our_commitment 1.png"
-          alt="Image bons choix"
-        />
-      </div>
-    </div>
-    <!-- Section choix de la bonne filière  -->
-    <div class="filiere">
-      <div class="filiere-contenu">
-        <h2 class="filiere-titre">Choisis la bonne filière après le BAC</h2>
-        <p class="filieredesc">
-          Ton avenir commence par un bon choix. <br />
-          AdoFutur t'aide à trouver la voie qui te correspond.
-        </p>
-        <div class="filiere-btn">
-          Commencer le test d'orientation
+        <div class="coordonnees">
+          <h4 class="coordonnees-title">COORDONNÉES</h4>
+
+          <div class="coordonnee-item">
+            <i class="fa-regular fa-envelope"></i>
+            <div>
+              <span>Adresse e-mail :</span>
+              <p>support@adofutur.ci</p>
+            </div>
+          </div>
+
+          <div class="coordonnee-item">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <span>Numéro de téléphone :</span>
+              <p>+2250171418167</p>
+            </div>
+          </div>
+
+          <div class="coordonnee-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <span>Adresses :</span>
+              <p>Abidjan, Côte d'Ivoire</p>
+            </div>
+          </div>
+
+          <div class="coordonnee-item">
+            <div class="coordonnee-item">
+                <p>
+                    Thompson blvd., bl. 12, entrance A 1407 Sofia, Bulgarie  Personality Test LLC 390 NE 191st St STE Florida, 17301, US
+                </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+
+      <!-- Colonne droite formulaire -->
+      <div class="contact-right">
+        <h2 class="form-title">Contactez-nous</h2>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Nom</label>
+            <input type="text" placeholder="Doe" />
+          </div>
+          <div class="form-group">
+            <label>Prenom</label>
+            <input type="text" placeholder="John" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="JohnDoe@mail.com" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Votre message..."></textarea>
+          </div>
+          <button class="btn-submit">Submit</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">

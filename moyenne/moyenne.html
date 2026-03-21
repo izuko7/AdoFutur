@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AdoFutur | Moyenne</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <!--favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../ressourrces/favicon/android-chrome-192x192.png"
+    />
+    <link rel="stylesheet" href="stylemoyenne.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <nav>
+      <img
+        src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
+        alt="Logo de AdoFutur"
+        class="logo"
+      />
+      <ul class="nav-links">
+        <li><a href="../index.html">Accueil</a></li>
+        <li>
+          <a href="../testdorientation/testdorientation.html"
+            >Test d'orientation</a
+          >
+        </li>
+        <li><a href="../metiers/metiers.html">Métiers</a></li>
+        <li><a href="moyenne.html">Moyennes</a></li>
+        <li class="btn-contact">
+          <a href="../Contacts/contacts.html">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="moyenne-hero">
+      <div class="hero-left">
+        <h1 class="hero-title">
+          Calcule ta <span class="color">moyenne</span> facilement et
+          efficacement.
+        </h1>
+        <p class="hero-desc">
+          Entre tes notes pour connaître ta moyenne annuelle, trimestrielle et
+          d'orientation.
+        </p>
+      </div>
+      <div class="hero-right">
+        <img
+          src="../ressourrces/images/illustration-travail.png"
+          alt="Illustration moyenne"
+        />
+      </div>
+    </div>
+
+    <!-- Carte principale -->
+    <div class="moyenne-card">
+      <!-- Onglets trimestre -->
+      <div class="trimestre-tabs">
+        <button class="tab active">Trimestre 1</button>
+        <button class="tab">Trimestre 2</button>
+        <button class="tab">Trimestre 3</button>
+        <button class="btn-add-row" title="Ajouter une matière">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </div>
+
+      <!-- Tableau des notes -->
+      <div class="table-wrapper">
+        <table class="notes-table">
+          <thead>
+            <tr>
+              <th>Matières</th>
+              <th>Note 1</th>
+              <th>Note 2</th>
+              <th>Note 3</th>
+              <th>Coef</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="matiere-badge">Mathématiques</span></td>
+              <td>17</td>
+              <td>17</td>
+              <td>4</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td><span class="matiere-badge highlight">Français</span></td>
+              <td>4</td>
+              <td>12</td>
+              <td>17</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td><span class="matiere-badge">Physique-chimie</span></td>
+              <td>12</td>
+              <td>7</td>
+              <td>10</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td><span class="matiere-badge highlight">SVT</span></td>
+              <td>7</td>
+              <td>17</td>
+              <td>17</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td><span class="matiere-badge">Histoire-géo</span></td>
+              <td>17</td>
+              <td>17</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Bas de la carte -->
+      <div class="card-footer">
+        <div class="footer-left">
+          <p class="lien-ajouter">
+            Ajouter une matière <i class="fa-solid fa-circle-plus"></i>
+          </p>
+          <button class="btn-calculer">Calculer ma moyenne</button>
+        </div>
+        <div class="footer-right">
+          <div class="resultat-box">
+            <span class="resultat-label">Moyenne :</span>
+          </div>
+          <p class="lien-reinitialiser">Réinitialiser</p>
+        </div>
+      </div>
+    </div>
+    <!-- Section Conseils & Astuces -->
+    <div class="conseils-section">
+      <h3 class="conseils-title">Conseils & Astuces !</h3>
+
+      <ul class="conseils-list">
+        <li class="conseil-item">
+          <i class="fa-solid fa-a conseil-icon"></i>
+          <span>Maximise tes notes avec un bon planning</span>
+        </li>
+        <li class="conseil-item">
+          <i class="fa-solid fa-rotate conseil-icon"></i>
+          <span>L'importance c'est la régularité dans les devoirs</span>
+        </li>
+        <li class="conseil-item">
+          <i class="fa-regular fa-lightbulb conseil-icon"></i>
+          <span>Trouve des méthodes de révisions éfficaces</span>
+        </li>
+      </ul>
+    </div>
+
+    
+  <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <!-- Logo -->
+        <div class="footer-logo">
+          <img
+            src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
+            alt="Logo AdoFutur"
+            class="footer-logo-img"
+          />
+        </div>
+
+        <!-- Colonnes de liens -->
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Support</h4>
+            <ul>
+              <li><a href="#">Centre d'aide</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Conditions d'utilisation</a></li>
+              <li><a href="#">Test de personnalité</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Compagnie</h4>
+            <ul>
+              <li><a href="#">A propos de nous</a></li>
+              <li><a href="#">Termes et Services</a></li>
+              <li><a href="#">Blog de la communauté</a></li>
+              <li><a href="#">Termes & Services</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Contact</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Nous contacter</a></li>
+              <li><a href="#">Partenaires</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Socail</h4>
+            <div class="social-icons">
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-snapchat"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+              <a href="#" class="social-btn"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bas du footer -->
+      <div class="footer-bottom">
+        <p>© 2026 Bits Entreprise. Tous droits réservés.</p>
+      </div>
+    </footer>
+  </body>
+</html>

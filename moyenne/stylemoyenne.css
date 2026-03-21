@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0ede6;
+  min-height: 100vh;
+  padding: 24px 32px;
+}
+
+/*Barre de navigation*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 24px;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.97rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #2e6e4f;
+}
+
+.btn-contact a {
+  border: 1.5px solid #8a8989;
+  border-radius: 999px;
+  padding: 8px 22px;
+  color: #1a1a1a !important;
+  font-weight: 500;
+  transition:
+    border-color 0.2s,
+    color 0.2s !important;
+}
+
+.btn-contact a:hover {
+  border-color: #2e6e4f !important;
+  color: #2e6e4f !important;
+}
+
+/*  Section calcule ta moyenne  */
+.moyenne-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 40px 32px;
+  gap: 60px;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2a2a2a;
+  line-height: 1.3;
+}
+
+.color {
+  color: #2e6e4f;
+}
+
+.hero-desc {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.8;
+  max-width: 380px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+}
+
+/* Carte principale  */
+.moyenne-card {
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 36px 40px;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/*  Onglets trimestre */
+.trimestre-tabs {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tab {
+  border: 1.5px solid #ccc;
+  border-radius: 999px;
+  padding: 8px 22px;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #555;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  border-color: #2e6e4f;
+  color: #2e6e4f;
+}
+
+.tab.active {
+  background-color: #2e6e4f;
+  border-color: #2e6e4f;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-add-row {
+  margin-left: auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.5px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.btn-add-row:hover {
+  background: #2e6e4f;
+  border-color: #2e6e4f;
+  color: #fff;
+}
+
+/*  Tableau  */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.notes-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.notes-table thead th {
+  text-align: left;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #555;
+  padding: 10px 16px;
+  border-bottom: 1.5px solid #eee;
+}
+
+.notes-table tbody tr {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.notes-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.notes-table tbody td {
+  padding: 10px 16px;
+  vertical-align: middle;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: left;
+}
+
+/* Badges matières */
+.matiere-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.matiere-badge.highlight {
+  background-color: #d6e9df;
+  color: #2e6e4f;
+}
+
+/* Bas de carte */
+.card-footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.lien-ajouter {
+  font-size: 0.9rem;
+  color: #555;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lien-ajouter i {
+  color: #2e6e4f;
+}
+
+.lien-ajouter:hover {
+  color: #2e6e4f;
+}
+
+.btn-calculer {
+  background-color: #2e6e4f;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 28px;
+  font-size: 0.95rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition:  0.2s;
+  width: fit-content;
+}
+
+.btn-calculer:hover {
+  background-color: #235a40;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.resultat-box {
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  padding: 20px 48px;
+  text-align: left;
+  background: #fafafa;
+  min-width: 220px;
+  min-height: 70px;
+}
+
+.resultat-label {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.lien-reinitialiser {
+  font-size: 0.82rem;
+  color: #aaa;
+  cursor: pointer;
+  text-align: right;
+  transition: color 0.2s;
+}
+
+.lien-reinitialiser:hover {
+  color: #e05050;
+}
+
+/* Section Conseils & Astuces */
+.conseils-section {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+ 
+.conseils-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+ 
+.conseils-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-left: 12px;
+}
+ 
+.conseil-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.99rem;
+  color: #444;
+}
+ 
+.conseil-icon {
+  font-size: 1.2rem;
+  color: #555;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+
+/*Footer*/
+.footer {
+  background-color: #2d2d2d;
+  color: #ccc;
+  padding: 60px 80px 0;
+  font-family: 'Poppins', sans-serif;
+}
+ 
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid #444;
+}
+ 
+.footer-logo-img {
+ height: 120px;
+  width: auto;
+}
+ 
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+ 
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 180px;
+}
+ 
+.footer-col-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+ 
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+.footer-col ul li a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 0.92rem;
+  font-weight: 400;
+  transition: color 0.2s;
+}
+ 
+.footer-col ul li a:hover {
+  color: #ffffff;
+}
+ 
+/* Icônes sociales */
+.social-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+ 
+.social-btn {
+  width: 52px;
+  height: 52px;
+  background-color: #3e3e3e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+ 
+.social-btn:hover {
+  background-color: #2e6e4f;
+}
+ 
+/* Bas du footer */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.85rem;
+  color: #777;
+  border-top: 1px solid #444;
+  margin-top: 0;
+}
