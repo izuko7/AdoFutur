@@ -13,6 +13,7 @@ body {
   padding: 24px 32px;
 }
 
+
 /*Barre de navigation*/
 nav {
   display: flex;
@@ -60,6 +61,90 @@ nav {
   border-color: #2e6e4f !important;
   color: #2e6e4f !important;
 }
+
+/* Hamburger — caché sur desktop */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Bouton fermer — caché sur desktop */
+.nav-close {
+  display: none;
+}
+
+/* Overlay */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 32px 40px;
+    gap: 28px;
+    z-index: 999;
+    transition: right 0.35s ease;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-close {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .nav-close:hover {
+    color: #2e6e4f;
+  }
+
+  .btn-contact a {
+    border: 1.5px solid #8a8989;
+    border-radius: 999px;
+    padding: 8px 22px;
+  }
+}
+
+
 
 /*  Section calcule ta moyenne  */
 .moyenne-hero {
@@ -446,4 +531,152 @@ nav {
   color: #777;
   border-top: 1px solid #444;
   margin-top: 0;
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — TABLETTE (max 768px)
+═══════════════════════════════════════ */
+@media (max-width: 768px) {
+
+  body { padding: 16px; }
+
+  /* Hero */
+  .moyenne-hero {
+    flex-direction: column;
+    padding: 32px 24px;
+    gap: 32px;
+    margin-bottom: 24px;
+  }
+
+  .hero-right img { max-width: 400px; }
+
+  /* Carte principale */
+  .moyenne-card {
+    padding: 24px 20px;
+    border-radius: 16px;
+  }
+
+  /* Onglets */
+  .trimestre-tabs { flex-wrap: wrap; gap: 8px; }
+
+  /* Bas de carte */
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .resultat-box {
+    width: 100%;
+    padding: 16px 24px;
+  }
+
+  /* Conseils */
+  .conseils-section {
+    padding: 0 24px;
+  }
+
+  /* Footer */
+  .footer { padding: 48px 32px 0; }
+  .footer-links { flex-wrap: wrap; gap: 32px; }
+  .footer-col { min-width: calc(50% - 16px); }
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — MOBILE (max 480px)
+   iPhone X/12, Samsung A05/S25, Tecno, Xiaomi
+═══════════════════════════════════════ */
+@media (max-width: 480px) {
+
+  body { padding: 12px; }
+
+  /* Hero */
+  .moyenne-hero {
+    flex-direction: column;
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .hero-title { font-size: 1.6rem; }
+
+  .hero-desc {
+    font-size: 0.88rem;
+    max-width: 100%;
+  }
+
+  .hero-right img { max-width: 100%; }
+
+  /* Carte principale */
+  .moyenne-card {
+    padding: 20px 16px;
+    border-radius: 14px;
+    margin-bottom: 32px;
+  }
+
+  /* Onglets */
+  .trimestre-tabs { flex-wrap: wrap; gap: 8px; }
+
+  .tab {
+    padding: 6px 16px;
+    font-size: 0.82rem;
+  }
+
+  /* Tableau : scroll horizontal sur mobile */
+  .table-wrapper { overflow-x: auto; }
+
+  .notes-table thead th,
+  .notes-table tbody td {
+    padding: 8px 10px;
+    font-size: 0.82rem;
+  }
+
+  .matiere-badge {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+  }
+
+  /* Bas de carte */
+  .card-footer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .btn-calculer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-right {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .resultat-box {
+    width: 100%;
+    min-width: unset;
+    padding: 14px 20px;
+  }
+
+  .lien-reinitialiser { text-align: left; }
+
+  /* Conseils */
+  .conseils-section {
+    padding: 0 16px;
+    margin-bottom: 40px;
+  }
+
+  .conseils-title { font-size: 1.4rem; }
+
+  .conseil-item { font-size: 0.88rem; }
+
+  /* Footer */
+  .footer { padding: 40px 20px 0; }
+  .footer-logo-img { height: 80px; }
+  .footer-links { flex-direction: column; gap: 24px; }
+  .footer-col { min-width: 100%; }
+  .footer-bottom { font-size: 0.78rem; }
 }

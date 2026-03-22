@@ -17,21 +17,36 @@
     />
   </head>
   <body>
+   
     <!-- Barre de navigation -->
-    <nav>
-      <img
-        src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
-        alt="Logo de AdoFutur"
-        class="logo"
-      />
-      <ul class="nav-links">
-        <li><a href="../index.html">Accueil</a></li>
-        <li><a href="testdorientation.html">Test d'orientation</a></li>
-        <li><a href="../metiers/metiers.html">Métiers</a></li>
-        <li><a href="../moyenne/moyenne.html">Moyennes</a></li>
-        <li class="btn-contact"><a href="../Contacts/contacts.html">Contacts</a></li>
-      </ul>
-    </nav>
+  <nav>
+    <img src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
+      alt="Logo de AdoFutur" class="logo" />
+
+    <!-- Bouton hamburger (visible uniquement mobile) -->
+    <button class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Overlay sombre derrière le menu -->
+    <div class="nav-overlay" id="overlay"></div>
+
+    <!-- Menu -->
+    <ul class="nav-links" id="navLinks">
+      <button class="nav-close" id="navClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <li><a href="../index.html">Accueil</a></li>
+      <li>
+        <a href="../testdorientation/testdorientation.html">Test d'orientation</a>
+      </li>
+      <li><a href="../metiers/metiers.html">Métiers</a></li>
+      <li><a href="../moyenne/moyenne.html">Moyennes</a></li>
+      <li class="btn-contact">
+        <a href="../Contacts/contacts.html">Contacts</a>
+      </li>
+    </ul>
+  </nav>
     <!-- carte de la barre de navigation -->
     <div>
       <div class="card">
@@ -46,12 +61,12 @@
           <!-- Homme -->
           <div class="btn-genre btn-homme">
             <i class="fa-solid fa-mars"></i>
-            Homme
+            Hommes
           </div>
           <!-- Femme -->
           <div class="btn-genre btn-femme">
             <i class="fa-solid fa-venus"></i>
-            Femme
+            Femmes
           </div>
         </div>
       </div>
@@ -183,5 +198,8 @@
         <p>© 2026 Bits Entreprise. Tous droits réservés.</p>
       </div>
     </footer>
+     <!-- Script pour la barre de naviagtion -->
+    <script src="../navbarScript.js"></script>
+
   </body>
 </html>

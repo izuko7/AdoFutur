@@ -61,6 +61,89 @@ nav {
   color: #2e6e4f !important;
 }
 
+/* Hamburger — caché sur desktop */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Bouton fermer — caché sur desktop */
+.nav-close {
+  display: none;
+}
+
+/* Overlay */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 32px 40px;
+    gap: 28px;
+    z-index: 999;
+    transition: right 0.35s ease;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-close {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .nav-close:hover {
+    color: #2e6e4f;
+  }
+
+  .btn-contact a {
+    border: 1.5px solid #8a8989;
+    border-radius: 999px;
+    padding: 8px 22px;
+  }
+}
+
+
 /*Carte au niveau du header*/
 .card {
   background-color: #f5f0e8;
@@ -104,7 +187,7 @@ nav {
   background: transparent;
   cursor: pointer;
   transition:
-    background 0.2s,
+     0.2s,
     color 0.2s;
 }
 
@@ -145,12 +228,12 @@ nav {
 }
 
 .btn-femme{
-  background: #6b35c8;
+  background: #c665a1;
   color: #fff;
 }
 
 .btn-femme:hover{
-  background: #8561c2;
+  background: #f37cc5;
 }
 
 .btn-genre:hover {
@@ -385,4 +468,166 @@ nav {
   color: #777;
   border-top: 1px solid #444;
   margin-top: 0;
+}
+
+
+
+/*
+   RESPONSIVE — TABLETTE (max 768px)
+ */
+@media (max-width: 768px) {
+ 
+  body { padding: 16px; }
+ 
+  /* Carte hero */
+  .card {
+    padding: 48px 32px 40px;
+    border-radius: 20px;
+  }
+ 
+  .title { font-size: 3rem; }
+ 
+  /* Genre */
+  .genre-group {
+    gap: 1.5rem;
+  }
+ 
+  /* Profil */
+  .profil-grille {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .profil-card {
+    max-width: 100%;
+    width: 100%;
+  }
+ 
+  /* Choix */
+  .choix-section {
+    flex-direction: column;
+    padding: 48px 24px;
+    gap: 32px;
+  }
+ 
+  .choix-img img {
+    max-width: 360px;
+  }
+ 
+  /* Filière */
+  .filiere {
+    padding: 3rem 2rem;
+  }
+ 
+  /* Footer */
+  .footer { padding: 48px 32px 0; }
+ 
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+ 
+  .footer-col { min-width: calc(50% - 16px); }
+}
+ 
+/* ═══════════════════════════════════════
+   RESPONSIVE — MOBILE (max 480px)
+   iPhone X/12, Samsung A05/S25, Tecno, Xiaomi
+═══════════════════════════════════════ */
+@media (max-width: 480px) {
+ 
+  body { padding: 12px; }
+ 
+  /* Carte hero */
+  .card {
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
+ 
+  .title { font-size: 2rem; }
+ 
+  .sous-titre {
+    font-size: 1.1rem;
+    max-width: 100%;
+  }
+ 
+  /* Genre */
+  .genre-group {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+ 
+  .btn-genre {
+    font-size: 1.2rem;
+    padding: 0.7rem 20px;
+  }
+ 
+  /* Profil */
+  .profil-section {
+    padding: 48px 16px;
+  }
+ 
+  .profil-titre {
+    font-size: 1.6rem;
+    margin-bottom: 32px;
+  }
+ 
+  .profil-grille {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+ 
+  .profil-card {
+    max-width: 100%;
+    width: 100%;
+    font-size: 0.92rem;
+  }
+ 
+  /* Choix */
+  .choix-section {
+    flex-direction: column;
+    padding: 32px 16px;
+    gap: 24px;
+  }
+ 
+  .choix-titre { font-size: 1.4rem; }
+ 
+  .choixdesc {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+ 
+  .choix-img img {
+    max-width: 100%;
+  }
+ 
+  /* Filière */
+  .filiere {
+    padding: 2.5rem 1.2rem;
+  }
+ 
+  .filiere-titre { font-size: 1.5rem; }
+ 
+  .filieredesc { font-size: 1rem; }
+ 
+  .filiere-btn {
+    width: 100%;
+    text-align: center;
+  }
+ 
+  /* Footer */
+  .footer { padding: 40px 20px 0; }
+ 
+  .footer-logo-img { height: 80px; }
+ 
+  .footer-links {
+    flex-direction: column;
+    gap: 24px;
+  }
+ 
+  .footer-col { min-width: 100%; }
+ 
+  .footer-bottom { font-size: 0.78rem; }
 }

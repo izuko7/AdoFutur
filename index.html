@@ -1,254 +1,246 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AdoFutur | Home</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <!--favicon -->
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="ressourrces/favicon/android-chrome-192x192.png"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Barre de navigation -->
-    <nav>
-      <img
-        src="ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
-        alt="Logo de AdoFutur"
-        class="logo"
-      />
-      <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="./testdorientation/testdorientation.html">Test d'orientation</a></li>
-        <li><a href="./metiers/metiers.html">Métiers</a></li>
-        <li><a href="./moyenne/moyenne.html">Moyennes</a></li>
-        <li class="btn-contact"><a href="./Contacts/contacts.html">Contacts</a></li>
-      </ul>
-    </nav>
-    <!-- carte de la barre de navigation -->
-    <div>
-      <div class="card">
-        <h1 class="title">
-          Découvre ta <span class="coleur">voie</span>,<br />
-          construis ton<br />
-          <span class="coleur">futur</span>.
-        </h1>
-        <p class="sous-titre">
-          Découvre ton profil et les domaines qui correspondent vraiment à ta
-          personnalité.
-        </p>
-        <a href="#" class="btn-debut">Commencer</a>
-        <p class="footer-titre">
-          En utilisant ce site, vous en acceptez les Conditions d'utilisation
-        </p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AdoFutur | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <!--favicon -->
+  <link rel="icon" type="image/x-icon" href="ressourrces/favicon/android-chrome-192x192.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Barre de navigation -->
+  <nav>
+    <img src="ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
+      alt="Logo de AdoFutur" class="logo" />
+
+    <!-- Bouton hamburger (visible uniquement mobile) -->
+    <button class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Overlay sombre derrière le menu -->
+    <div class="nav-overlay" id="overlay"></div>
+
+    <!-- Menu -->
+    <ul class="nav-links" id="navLinks">
+      <button class="nav-close" id="navClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <li><a href="index.html">Accueil</a></li>
+      <li>
+        <a href="./testdorientation/testdorientation.html">Test d'orientation</a>
+      </li>
+      <li><a href="./metiers/metiers.html">Métiers</a></li>
+      <li><a href="./moyenne/moyenne.html">Moyennes</a></li>
+      <li class="btn-contact">
+        <a href="./Contacts/contacts.html">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- carte de la barre de navigation -->
+  <div>
+    <div class="card">
+      <h1 class="title">
+        Découvre ta <span class="coleur">voie</span>,<br />
+        construis ton<br />
+        <span class="coleur">futur</span>.
+      </h1>
+      <p class="sous-titre">
+        Découvre ton profil et les domaines qui correspondent vraiment à ta
+        personnalité.
+      </p>
+      <a href="#" class="btn-debut">Commencer</a>
+      <p class="footer-titre">
+        En utilisant ce site, vous en acceptez les Conditions d'utilisation
+      </p>
     </div>
-    <!-- information concernant le site -->
-    <div class="info-section">
-      <div class="info-card">
-        <img
-          src="ressourrces/images/find_your_type.svg"
-          alt="profil"
-          class="info-image"
-        />
-        <h2 class="info-title">
-          Découvre ton profil, tes talents et les carrières qui peuvent
-          construire ton futur en quelques minutes.
-        </h2>
-        <p class="info-text">
-          Le test AdoFutur analyse ta personnalité, tes intérêts et tes
-          compétences pour te proposer des métiers et des filières d'études
-          adaptés à ton profil.
-        </p>
-      </div>
-
-      <div class="info-card">
-        <img
-          src="ressourrces/images/get_insights.svg"
-          alt="carrière"
-          class="info-image"
-        />
-        <h2 class="info-title">
-          Découvre la carrière qui correspond à ta personnalité en faisant le
-          test AdoFutur.
-        </h2>
-        <p class="info-text">
-          En quelques questions, tu obtiens des recommandations personnalisées
-          pour t'aider à faire les bons choix pour ton avenir.
-        </p>
-      </div>
+  </div>
+  <!-- information concernant le site -->
+  <div class="info-section">
+    <div class="info-card">
+      <img src="ressourrces/images/find_your_type.svg" alt="profil" class="info-image" />
+      <h2 class="info-title">
+        Découvre ton profil, tes talents et les carrières qui peuvent
+        construire ton futur en quelques minutes.
+      </h2>
+      <p class="info-text">
+        Le test AdoFutur analyse ta personnalité, tes intérêts et tes
+        compétences pour te proposer des métiers et des filières d'études
+        adaptés à ton profil.
+      </p>
     </div>
-    <!-- comment ça marche toute la carte -->
-    <div class="sectionStat">
-      <!-- Ligne du haut -->
-      <div class="statstop">
-        <div class="descriptStat">
-          <p>Identifiez votre archétype de carrière en passant notre test.</p>
-        </div>
-        <div class="stats-badges">
-          <div class="badge">
-            <span class="badge-num">+100</span>
-            <span class="badge-label">Questions</span>
-          </div>
-          <div class="badge">
-            <span class="badge-num">300</span>
-            <span class="badge-label">points analysés</span>
-          </div>
-        </div>
+
+    <div class="info-card">
+      <img src="ressourrces/images/get_insights.svg" alt="carrière" class="info-image" />
+      <h2 class="info-title">
+        Découvre la carrière qui correspond à ta personnalité en faisant le
+        test AdoFutur.
+      </h2>
+      <p class="info-text">
+        En quelques questions, tu obtiens des recommandations personnalisées
+        pour t'aider à faire les bons choix pour ton avenir.
+      </p>
+    </div>
+  </div>
+  <!-- comment ça marche toute la carte -->
+  <div class="sectionStat">
+    <!-- Ligne du haut -->
+    <div class="statstop">
+      <div class="descriptStat">
+        <p>Identifiez votre archétype de carrière en passant notre test.</p>
       </div>
-
-      <!-- Carte "Comment ça marche" -->
-      <div class="Comment-card">
-        <h2 class="how-titre">Comment ça marche</h2>
-
-        <div class="Etapes">
-          <div class="step">
-            <div class="step-number">1</div>
-            <h3 class="step-name">Préparez-vous</h3>
-            <p class="step-text">
-              Assurez-vous d'être dans un environnement calme et propice à la
-              concentration pour passer le test.
-            </p>
-          </div>
-          <div class="step">
-            <div class="step-number">2</div>
-            <h3 class="step-name">Passez le test</h3>
-            <p class="step-text">
-              Répondez à 100 questions conçues pour vous aider à identifier
-              votre archétype de carrière.
-            </p>
-          </div>
-          <div class="step">
-            <div class="step-number">3</div>
-            <h3 class="step-name">Recevez les résultats</h3>
-            <p class="step-text">
-              Accédez au rapport pour explorer les différents types de
-              personnalité et découvrir le vôtre !
-            </p>
-          </div>
+      <div class="stats-badges">
+        <div class="badge">
+          <span class="badge-num">+100</span>
+          <span class="badge-label">Questions</span>
         </div>
-
-        <a href="#" class="btn-debut">Commencer le test d'orientation</a>
+        <div class="badge">
+          <span class="badge-num">300</span>
+          <span class="badge-label">points analysés</span>
+        </div>
       </div>
     </div>
 
-    <!-- Ce que vous recevez -->
+    <!-- Carte "Comment ça marche" -->
+    <div class="Comment-card">
+      <h2 class="how-titre">Comment ça marche</h2>
 
-    <div class="features-section">
-      <h2 class="features-titre">Ce que vous recevrez</h2>
-
-      <div class="features-grid">
-        <div class="feature-item">
-          <div class="feature-icon">
-            <!-- Icône tasks check -->
-            <i class="fa-solid fa-clipboard-check"></i>
-          </div>
-          <h3 class="feature-name">Rapport de carrière</h3>
-          <p class="feature-text">
-            Ce rapport à la fois détaillé et facile à comprendre vous révèle vos
-            forces ainsi que vos faiblesses.
+      <div class="Etapes">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3 class="step-name">Préparez-vous</h3>
+          <p class="step-text">
+            Assurez-vous d'être dans un environnement calme et propice à la
+            concentration pour passer le test.
           </p>
         </div>
-
-        <div class="feature-item">
-          <div class="feature-icon">
-            <!-- Icône flamme -->
-            <i class="fa-solid fa-fire-flame-curved"></i>
-          </div>
-          <h3 class="feature-name">Défis quotidiens</h3>
-          <p class="feature-text">
-            Ces activités ont été conçues pour vous faire avancer pas à pas,
-            jour après jour.
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3 class="step-name">Passez le test</h3>
+          <p class="step-text">
+            Répondez à 100 questions conçues pour vous aider à identifier
+            votre archétype de carrière.
           </p>
         </div>
-
-        <div class="feature-item">
-          <div class="feature-icon">
-            <!-- Icône en train de lire un livre -->
-            <i class="fa-solid fa-book-open-reader"></i>
-          </div>
-          <h3 class="feature-name">Bibliothèque de tests</h3>
-          <p class="feature-text">
-            Accédez à plus de 20 tests pour vous aider à évaluer vos soft skills
-            et vos compétences techniques.
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3 class="step-name">Recevez les résultats</h3>
+          <p class="step-text">
+            Accédez au rapport pour explorer les différents types de
+            personnalité et découvrir le vôtre !
           </p>
         </div>
       </div>
+
+      <a href="#" class="btn-debut">Commencer le test d'orientation</a>
     </div>
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-top">
-        <!-- Logo -->
-        <div class="footer-logo">
-          <img
-            src="ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
-            alt="Logo AdoFutur"
-            class="footer-logo-img"
-          />
+  </div>
+
+  <!-- Ce que vous recevez -->
+
+  <div class="features-section">
+    <h2 class="features-titre">Ce que vous recevrez</h2>
+
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Icône tasks check -->
+          <i class="fa-solid fa-clipboard-check"></i>
+        </div>
+        <h3 class="feature-name">Rapport de carrière</h3>
+        <p class="feature-text">
+          Ce rapport à la fois détaillé et facile à comprendre vous révèle vos
+          forces ainsi que vos faiblesses.
+        </p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Icône flamme -->
+          <i class="fa-solid fa-fire-flame-curved"></i>
+        </div>
+        <h3 class="feature-name">Défis quotidiens</h3>
+        <p class="feature-text">
+          Ces activités ont été conçues pour vous faire avancer pas à pas,
+          jour après jour.
+        </p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-icon">
+          <!-- Icône en train de lire un livre -->
+          <i class="fa-solid fa-book-open-reader"></i>
+        </div>
+        <h3 class="feature-name">Bibliothèque de tests</h3>
+        <p class="feature-text">
+          Accédez à plus de 20 tests pour vous aider à évaluer vos soft skills
+          et vos compétences techniques.
+        </p>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
+          alt="Logo AdoFutur" class="footer-logo-img" />
+      </div>
+
+      <!-- Colonnes de liens -->
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Support</h4>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Test de personnalité</a></li>
+          </ul>
         </div>
 
-        <!-- Colonnes de liens -->
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4 class="footer-col-title">Support</h4>
-            <ul>
-              <li><a href="#">Centre d'aide</a></li>
-              <li><a href="#">Politique de confidentialité</a></li>
-              <li><a href="#">Conditions d'utilisation</a></li>
-              <li><a href="#">Test de personnalité</a></li>
-            </ul>
-          </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Compagnie</h4>
+          <ul>
+            <li><a href="#">A propos de nous</a></li>
+            <li><a href="#">Termes et Services</a></li>
+            <li><a href="#">Blog de la communauté</a></li>
+            <li><a href="#">Termes & Services</a></li>
+          </ul>
+        </div>
 
-          <div class="footer-col">
-            <h4 class="footer-col-title">Compagnie</h4>
-            <ul>
-              <li><a href="#">A propos de nous</a></li>
-              <li><a href="#">Termes et Services</a></li>
-              <li><a href="#">Blog de la communauté</a></li>
-              <li><a href="#">Termes & Services</a></li>
-            </ul>
-          </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Nous contacter</a></li>
+            <li><a href="#">Partenaires</a></li>
+          </ul>
+        </div>
 
-          <div class="footer-col">
-            <h4 class="footer-col-title">Contact</h4>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Nous contacter</a></li>
-              <li><a href="#">Partenaires</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4 class="footer-col-title">Socail</h4>
-            <div class="social-icons">
-              <a href="#" class="social-btn"
-                ><i class="fa-brands fa-snapchat"></i
-              ></a>
-              <a href="#" class="social-btn"
-                ><i class="fa-brands fa-tiktok"></i
-              ></a>
-              <a href="#" class="social-btn"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-              <a href="#" class="social-btn"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
-            </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Socail</h4>
+          <div class="social-icons">
+            <a href="#" class="social-btn"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Bas du footer -->
-      <div class="footer-bottom">
-        <p>© 2026 Bits Entreprise. Tous droits réservés.</p>
-      </div>
-    </footer>
-  </body>
+    <!-- Bas du footer -->
+    <div class="footer-bottom">
+      <p>© 2026 Bits Entreprise. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="navbarScript.js"></script>
+</body>
+
 </html>

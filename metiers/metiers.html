@@ -1,4 +1,4 @@
-<!Doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -16,14 +16,29 @@
   <nav>
     <img src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
       alt="Logo de AdoFutur" class="logo" />
-    <ul class="nav-links">
+
+    <!-- Bouton hamburger (visible uniquement mobile) -->
+    <button class="hamburger" id="hamburger">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Overlay sombre derrière le menu -->
+    <div class="nav-overlay" id="overlay"></div>
+
+    <!-- Menu -->
+    <ul class="nav-links" id="navLinks">
+      <button class="nav-close" id="navClose">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
       <li><a href="../index.html">Accueil</a></li>
       <li>
         <a href="../testdorientation/testdorientation.html">Test d'orientation</a>
       </li>
-      <li><a href="metiers.html">Métiers</a></li>
+      <li><a href="../metiers/metiers.html">Métiers</a></li>
       <li><a href="../moyenne/moyenne.html">Moyennes</a></li>
-      <li class="btn-contact"><a href="../Contacts/contacts.html">Contacts</a></li>
+      <li class="btn-contact">
+        <a href="../Contacts/contacts.html">Contacts</a>
+      </li>
     </ul>
   </nav>
   <!-- Section "Explore les métiers de demain" -->
@@ -82,13 +97,14 @@
   <p class="metiers-count">+ de 50 métiers</p>
 
   <div class="metiers-grid">
-
     <div class="metier-card">
       <div class="metier-card-top">
-        <img src="../ressourrces/images/metier1.png" alt="Informatique" class="metier-icon">
+        <img src="../ressourrces/images/metier1.png" alt="Informatique" class="metier-icon" />
         <div class="metier-card-info">
           <h3 class="metier-name">INFORMATIQUE</h3>
-          <p class="metier-desc">Creér et maintenir des sites internets et des applications.</p>
+          <p class="metier-desc">
+            Creér et maintenir des sites internets et des applications.
+          </p>
         </div>
       </div>
       <div class="metier-card-bottom">
@@ -101,10 +117,13 @@
 
     <div class="metier-card">
       <div class="metier-card-top">
-        <img src="../ressourrces/images/metier2.png" alt="Data Analyste" class="metier-icon">
+        <img src="../ressourrces/images/metier2.png" alt="Data Analyste" class="metier-icon" />
         <div class="metier-card-info">
           <h3 class="metier-name">DATA ANALYSTE</h3>
-          <p class="metier-desc">Analyse les données pour aider les entreprises à prendre des décisions.</p>
+          <p class="metier-desc">
+            Analyse les données pour aider les entreprises à prendre des
+            décisions.
+          </p>
         </div>
       </div>
       <div class="metier-card-bottom">
@@ -115,20 +134,22 @@
       </div>
     </div>
   </div>
-  
-  <div class="metiers-grid">
 
+  <div class="metiers-grid">
     <div class="metier-card">
       <div class="metier-card-top">
-        <img src="../ressourrces/images/metier3.png" alt="Informatique" class="metier-icon">
+        <img src="../ressourrces/images/metier3.png" alt="Informatique" class="metier-icon" />
         <div class="metier-card-info">
           <h3 class="metier-name">COMMUNITY MANAGER</h3>
-          <p class="metier-desc">Gérer la communication et les réseux sociaux d'une entreprise.</p>
+          <p class="metier-desc">
+            Gérer la communication et les réseux sociaux d'une entreprise.
+          </p>
         </div>
       </div>
       <div class="metier-card-bottom">
         <span class="metier-etude">
-          <i class="fa-solid fa-graduation-cap"></i> Etude : Communnication / Marketing
+          <i class="fa-solid fa-graduation-cap"></i> Etude : Communnication /
+          Marketing
         </span>
         <a href="#" class="btn-voir">Voir le métier</a>
       </div>
@@ -136,10 +157,12 @@
 
     <div class="metier-card">
       <div class="metier-card-top">
-        <img src="../ressourrces/images/metier4.png" alt="Data Analyste" class="metier-icon">
+        <img src="../ressourrces/images/metier4.png" alt="Data Analyste" class="metier-icon" />
         <div class="metier-card-info">
           <h3 class="metier-name">INFIMIER(ERE)</h3>
-          <p class="metier-desc">Soigenr et accompagner les patients dans un environement médical.</p>
+          <p class="metier-desc">
+            Soigenr et accompagner les patients dans un environement médical.
+          </p>
         </div>
       </div>
       <div class="metier-card-bottom">
@@ -152,73 +175,64 @@
   </div>
 
   <!-- Footer -->
-    <footer class="footer">
-      <div class="footer-top">
-        <!-- Logo -->
-        <div class="footer-logo">
-          <img
-            src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
-            alt="Logo AdoFutur"
-            class="footer-logo-img"
-          />
+  <footer class="footer">
+    <div class="footer-top">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="../ressourrces/images/Blue and Black Minimalist Brand Logo (200 x 200 px) (Site Web).png"
+          alt="Logo AdoFutur" class="footer-logo-img" />
+      </div>
+
+      <!-- Colonnes de liens -->
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 class="footer-col-title">Support</h4>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="#">Conditions d'utilisation</a></li>
+            <li><a href="#">Test de personnalité</a></li>
+          </ul>
         </div>
 
-        <!-- Colonnes de liens -->
-        <div class="footer-links">
-          <div class="footer-col">
-            <h4 class="footer-col-title">Support</h4>
-            <ul>
-              <li><a href="#">Centre d'aide</a></li>
-              <li><a href="#">Politique de confidentialité</a></li>
-              <li><a href="#">Conditions d'utilisation</a></li>
-              <li><a href="#">Test de personnalité</a></li>
-            </ul>
-          </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Compagnie</h4>
+          <ul>
+            <li><a href="#">A propos de nous</a></li>
+            <li><a href="#">Termes et Services</a></li>
+            <li><a href="#">Blog de la communauté</a></li>
+            <li><a href="#">Termes & Services</a></li>
+          </ul>
+        </div>
 
-          <div class="footer-col">
-            <h4 class="footer-col-title">Compagnie</h4>
-            <ul>
-              <li><a href="#">A propos de nous</a></li>
-              <li><a href="#">Termes et Services</a></li>
-              <li><a href="#">Blog de la communauté</a></li>
-              <li><a href="#">Termes & Services</a></li>
-            </ul>
-          </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contact</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Nous contacter</a></li>
+            <li><a href="#">Partenaires</a></li>
+          </ul>
+        </div>
 
-          <div class="footer-col">
-            <h4 class="footer-col-title">Contact</h4>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Nous contacter</a></li>
-              <li><a href="#">Partenaires</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-col">
-            <h4 class="footer-col-title">Socail</h4>
-            <div class="social-icons">
-              <a href="#" class="social-btn"
-                ><i class="fa-brands fa-snapchat"></i
-              ></a>
-              <a href="#" class="social-btn"
-                ><i class="fa-brands fa-tiktok"></i
-              ></a>
-              <a href="#" class="social-btn"
-                ><i class="fa-brands fa-whatsapp"></i
-              ></a>
-              <a href="#" class="social-btn"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
-            </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Socail</h4>
+          <div class="social-icons">
+            <a href="#" class="social-btn"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Bas du footer -->
-      <div class="footer-bottom">
-        <p>© 2026 Bits Entreprise. Tous droits réservés.</p>
-      </div>
-    </footer>
+    <!-- Bas du footer -->
+    <div class="footer-bottom">
+      <p>© 2026 Bits Entreprise. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <!-- Script pour la barre de naviagtion -->
+  <script src="../navbarScript.js"></script>
 </body>
 
 </html>

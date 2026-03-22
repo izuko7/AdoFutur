@@ -61,6 +61,90 @@ nav {
   color: #2e6e4f !important;
 }
 
+/* Hamburger — caché sur desktop */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Bouton fermer — caché sur desktop */
+.nav-close {
+  display: none;
+}
+
+/* Overlay */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 998;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.nav-overlay.active {
+  display: block;
+  opacity: 1;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 300px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 80px 32px 40px;
+    gap: 28px;
+    z-index: 999;
+    transition: right 0.35s ease;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.12);
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-close {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+  }
+
+  .nav-close:hover {
+    color: #2e6e4f;
+  }
+
+  .btn-contact a {
+    border: 1.5px solid #8a8989;
+    border-radius: 999px;
+    padding: 8px 22px;
+  }
+}
+
+
+
 /*Section "Explore les métiers de demain"*/
 .metiers-section {
   display: flex;
@@ -451,4 +535,134 @@ nav {
   color: #777;
   border-top: 1px solid #444;
   margin-top: 0;
+}
+
+
+/*
+   RESPONSIVE — TABLETTE (max 768px)
+ */
+@media (max-width: 768px) {
+
+  body { padding: 16px; }
+
+  /* Hero métiers : image passe en dessous */
+  .metiers-section {
+    flex-direction: column;
+    padding: 48px 24px;
+    gap: 32px;
+  }
+
+  .metiers-img img {
+    max-width: 360px;
+  }
+
+  /* Barre de filtres : wrap sur plusieurs lignes */
+  .filter-barre {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 20px;
+  }
+
+  .filtre-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .filter-right {
+    margin-left: 0;
+  }
+
+  /* Cartes métiers : 1 par ligne */
+  .metiers-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .metier-card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer { padding: 48px 32px 0; }
+
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .footer-col { min-width: calc(50% - 16px); }
+}
+
+/*
+   RESPONSIVE — MOBILE (max 480px)
+*/
+@media (max-width: 480px) {
+
+  body { padding: 12px; }
+
+  /* Hero */
+  .metiers-section {
+    padding: 32px 16px;
+    gap: 24px;
+  }
+
+  .metiers-titre { font-size: 1.8rem; }
+
+  .metiers-desc { font-size: 0.9rem; }
+
+  .metiers-search {
+    max-width: 100%;
+    padding: 12px 16px;
+  }
+
+  .metiers-img img { max-width: 100%; }
+
+  /* Filtres */
+  .filter-barre {
+    padding: 14px 16px;
+    border-radius: 12px;
+  }
+
+  .filter-tags { gap: 8px; }
+
+  .filter-tag {
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+
+  /* Compteur */
+  .metiers-count { padding: 0 16px; }
+
+  /* Cartes */
+  .metiers-grid { padding: 0 0 20px; }
+
+  .metier-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .metier-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .metier-icon { width: 80px; }
+
+  .metier-name { font-size: 1rem; }
+
+  .btn-voir {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer { padding: 40px 20px 0; }
+  .footer-logo-img { height: 80px; }
+  .footer-links { flex-direction: column; gap: 24px; }
+  .footer-col { min-width: 100%; }
+  .footer-bottom { font-size: 0.78rem; }
 }
