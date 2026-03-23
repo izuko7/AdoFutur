@@ -530,10 +530,10 @@ nav {
   .footer-col { min-width: calc(50% - 16px); }
 }
  
-/* ═══════════════════════════════════════
+/*
    RESPONSIVE — MOBILE (max 480px)
    iPhone X/12, Samsung A05/S25, Tecno, Xiaomi
-═══════════════════════════════════════ */
+ */
 @media (max-width: 480px) {
  
   body { padding: 12px; }
