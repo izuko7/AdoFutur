@@ -666,3 +666,32 @@ nav {
   .footer-col { min-width: 100%; }
   .footer-bottom { font-size: 0.78rem; }
 }
+
+/* css pour le bouton remonter */
+.btn-top{
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  background-color: #2e6e4f !important;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s, transform 0.2s;
+  z-index: 999;
+}
+
+.btn-top:hover {
+  background-color: #235a40;
+  transform: translateY(-3px);
+}
+
+.btn-top.visible {
+  display: flex;
+}
