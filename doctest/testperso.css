@@ -165,3 +165,94 @@ nav {
     gap: 12px;
   }
 }
+
+
+/* ── Liste des questions ── */
+.questions-liste {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ 
+/* ── Carte question ── */
+.question-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+}
+ 
+/* ── Texte question ── */
+.question-texte {
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #2a2a2a;
+  text-align: center;
+  line-height: 1.6;
+}
+ 
+/* ── Cercles ── */
+.cercles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+ 
+.cercle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+ 
+.cercle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+ 
+/* Couleurs */
+.cercle.rouge      { background-color: #f8c0bc; }
+.cercle.orange     { background-color: #fdd9b0; }
+.cercle.gris       { background-color: #e8e8e8; }
+.cercle.vert-clair { background-color: #c8ecd8; }
+.cercle.vert       { background-color: #80d4c0; }
+ 
+/* Cercle sélectionné */
+.cercle.selected {
+  transform: scale(1.1);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+}
+ 
+.cercle.rouge.selected      { background-color: #f07060; }
+.cercle.orange.selected     { background-color: #f5a030; }
+.cercle.gris.selected       { background-color: #aaaaaa; }
+.cercle.vert-clair.selected { background-color: #70c890; }
+.cercle.vert.selected       { background-color: #40b8a0; }
+ 
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  body { padding: 12px; }
+ 
+  nav { padding: 0 0 16px; }
+ 
+  .logo { height: 60px; }
+ 
+  .labels-header { padding: 0 12px; }
+ 
+  .question-card { padding: 20px 16px; gap: 16px; }
+ 
+  .question-texte { font-size: 0.88rem; }
+ 
+  .cercle { width: 44px; height: 44px; }
+ 
+  .cercles { gap: 16px; }
+}
