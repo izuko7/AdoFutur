@@ -102,9 +102,6 @@ Toute contribution est la bienvenue ! Que ce soit pour :
 5. Ouvre une Pull Request
    
 ```  ⚠️ Important : Toutes les modifications doivent passer par la branche test et faire l'objet d'une Pull Request. Les contributions directes sur la branche principale ne seront pas acceptées.``` 
-### 📜 Licence
-
-Ce projet est ouvert à la communauté. Contribue, partage et crée librement !
 
 Live Preview : [AdoFutur](https://izuko7.github.io/AdoFutur/index.html)
 
