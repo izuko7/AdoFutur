@@ -77,7 +77,7 @@ nav {
   width: 100%;
 }
 
-.cercles {
+.cercles0 {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,44 +85,37 @@ nav {
   gap: 24px;
 }
 
-.cercle {
+.cercle1 {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   border: 2.5px solid transparent;
   cursor: pointer;
-  transition:
-    transform 0.2s,
-    box-shadow 0.2s;
 }
 
-.cercle:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
 
-.cercle.rouge {
+.cercle1.rouge {
   background-color: #f8c0bc;
   border-color: #f0958e;
   
 }
 
-.cercle.orange {
+.cercle1.orange {
   background-color: #fdd9b0;
   border-color: #fac78d;
 }
 
-.cercle.gris {
+.cercle1.gris {
   background-color: #e0e0e0;
   border-color: #ddc8c8;
 }
 
-.cercle.vert-clair {
+.cercle1.vert-clair {
   background-color: #b8e8c8;
   border-color: #95c4a5;
 }
 
-.cercle.vert {
+.cercle1.vert {
   background-color: #7dd4b8;
   border-color: #55bb9b;
 }
@@ -133,7 +126,6 @@ nav {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 6px;
 }
 
 .label-left,
@@ -156,15 +148,38 @@ nav {
     font-size: 0.95rem;
   }
 
-  .cercle {
+  .cercle1 {
     width: 48px;
     height: 48px;
   }
 
-  .cercles {
+  .cercles0 {
     gap: 12px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ── Liste des questions ── */
@@ -174,6 +189,8 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  position: relative;
+  top: 20px;
 }
  
 /* ── Carte question ── */
@@ -198,7 +215,7 @@ nav {
 }
  
 /* ── Cercles ── */
-.cercles {
+.cercles1 {
   display: flex;
   align-items: center;
   justify-content: center;
