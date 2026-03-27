@@ -119,6 +119,12 @@ nav {
 
 /*  Responsive  */
 @media (max-width: 480px) {
+  nav {
+    padding: 0 0 55px;
+  }
+  .logo {
+    height: 80px;
+  }
   .guidelines-container {
     padding: 32px 24px;
     gap: 24px;
@@ -132,3 +138,6 @@ nav {
     font-size: 0.92rem;
   }
 }
+
+
+
