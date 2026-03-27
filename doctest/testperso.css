@@ -93,11 +93,9 @@ nav {
   cursor: pointer;
 }
 
-
 .cercle1.rouge {
   background-color: #f8c0bc;
   border-color: #f0958e;
-  
 }
 
 .cercle1.orange {
@@ -119,7 +117,6 @@ nav {
   background-color: #7dd4b8;
   border-color: #55bb9b;
 }
-
 
 /* ── Labels ── */
 .choix-labels {
@@ -158,30 +155,6 @@ nav {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ── Liste des questions ── */
 .questions-liste {
   max-width: 700px;
@@ -192,7 +165,7 @@ nav {
   position: relative;
   top: 20px;
 }
- 
+
 /* ── Carte question ── */
 .question-card {
   background-color: #ffffff;
@@ -202,9 +175,9 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 24px;
-  box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.05);
 }
- 
+
 /* ── Texte question ── */
 .question-texte {
   font-size: 0.95rem;
@@ -213,7 +186,7 @@ nav {
   text-align: center;
   line-height: 1.6;
 }
- 
+
 /* ── Cercles ── */
 .cercles1 {
   display: flex;
@@ -221,55 +194,133 @@ nav {
   justify-content: center;
   gap: 28px;
 }
- 
+
 .cercle {
   width: 56px;
   height: 56px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
- 
+
 .cercle:hover {
   transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
- 
+
 /* Couleurs */
-.cercle.rouge      { background-color: #f8c0bc; }
-.cercle.orange     { background-color: #fdd9b0; }
-.cercle.gris       { background-color: #e8e8e8; }
-.cercle.vert-clair { background-color: #c8ecd8; }
-.cercle.vert       { background-color: #80d4c0; }
- 
+.cercle.rouge {
+  background-color: #f8c0bc;
+}
+.cercle.orange {
+  background-color: #fdd9b0;
+}
+.cercle.gris {
+  background-color: #e8e8e8;
+}
+.cercle.vert-clair {
+  background-color: #c8ecd8;
+}
+.cercle.vert {
+  background-color: #80d4c0;
+}
+
 /* Cercle sélectionné */
 .cercle.selected {
   transform: scale(1.1);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
 }
- 
-.cercle.rouge.selected      { background-color: #f07060; }
-.cercle.orange.selected     { background-color: #f5a030; }
-.cercle.gris.selected       { background-color: #aaaaaa; }
-.cercle.vert-clair.selected { background-color: #70c890; }
-.cercle.vert.selected       { background-color: #40b8a0; }
- 
-/* ── Responsive ── */
+
+.cercle.rouge.selected {
+  background-color: #f07060;
+}
+.cercle.orange.selected {
+  background-color: #f5a030;
+}
+.cercle.gris.selected {
+  background-color: #aaaaaa;
+}
+.cercle.vert-clair.selected {
+  background-color: #70c890;
+}
+.cercle.vert.selected {
+  background-color: #40b8a0;
+}
+
+/*  Bouton  */
+.btn-start {
+  display: block;
+  max-width: 300px;
+  margin: 24px auto 0;
+  background-color: #2e6e4f;
+  color: #fff;
+  text-align: center;
+  padding: 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+  position: relative;
+  top: 20px;
+}
+
+.btn-start:hover {
+  background-color: #235a40;
+}
+
 @media (max-width: 480px) {
-  body { padding: 12px; }
- 
-  nav { padding: 0 0 16px; }
- 
-  .logo { height: 60px; }
- 
-  .labels-header { padding: 0 12px; }
- 
-  .question-card { padding: 20px 16px; gap: 16px; }
- 
-  .question-texte { font-size: 0.88rem; }
- 
-  .cercle { width: 44px; height: 44px; }
- 
-  .cercles { gap: 16px; }
+  body {
+    padding: 12px 25px;
+  }
+  nav {
+    padding: 0 0 16px;
+  }
+  .logo {
+    height: 60px;
+  }
+  .question-card {
+    padding: 20px 16px;
+    gap: 16px;
+  }
+  .question-texte {
+    font-size: 0.88rem;
+  }
+  .cercle {
+    width: 44px;
+    height: 44px;
+  }
+  .cercles1 {
+    gap: 16px;
+  }
+  .cercle1 {
+    width: 44px;
+    height: 44px;
+  }
+  .cercles0 {
+    gap: 12px;
+  }
+
+  /* Conteneur */
+  .question-container {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+
+  /* Questions liste */
+  .questions-liste {
+    top: 12px;
+  }
+
+  /* Bouton */
+  .btn-start {
+    max-width: 100%; /* pleine largeur sur mobile */
+    margin: 20px auto 0;
+    padding: 16px;
+    font-size: 0.95rem;
+    top: 12px;
+  }
 }
