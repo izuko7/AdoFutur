@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0ede6;
+  min-height: 100vh;
+  padding: 24px 32px;
+}
+
+/* Barre de navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px 24px;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 0.97rem;
+  font-weight: 400;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-links a:hover {
+  color: #2e6e4f;
+}
+
+/* Formulaire */
+.orientation-form {
+  background-color: #f5f5f5;
+  border-radius: 24px;
+  padding: 48px 40px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.orientation-form h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.orientation-form p {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.orientation-form label {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 8px;
+}
+
+.orientation-form input[type="text"],
+.orientation-form select {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.93rem;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.2s;
+  outline: none;
+}
+
+.orientation-form input[type="text"]:focus,
+.orientation-form select:focus {
+  border-color: #2e6e4f;
+}
+
+.orientation-form button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #2e6e4f;
+  color: #fff;
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.orientation-form button[type="submit"]:hover {
+  background-color: #235a40;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+
+  nav {
+    padding: 0 0 24px;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .orientation-form {
+    padding: 32px 20px;
+  }
+
+  .orientation-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .orientation-form label {
+    font-size: 0.88rem;
+  }
+}

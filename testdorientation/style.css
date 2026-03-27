@@ -370,6 +370,11 @@ nav {
   transition: 0.2s, color 0.2s;
 }
 
+.filiere-btn a{
+  text-decoration: none;
+  color: #222;
+}
+
 .filiere-btn:hover{
   background: #1e6b4a;
   color: #fff;
